@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                row-gap: 30px;
+            }
+            .card {
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+                perspective: 1000px; /* Sử dụng perspective để tạo hiệu ứng 3D */
+            }
+
+            .front {
+                background: rgb(12, 8, 232);
+                color: #fff;
+                padding: 10px;
+            }
+            .back {
+                background: rgb(1, 71, 29);
+                color: #fff;
+                padding: 10px;
+            }
+
+            .front,
+            .back {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                transition: transform 0.5s; /* Sử dụng transition để tạo hiệu ứng mượt mà */
+                backface-visibility: hidden; /* Ẩn mặt sau khi chưa hover */
+            }
+
+            .back {
+                transform: rotateY(
+                    180deg
+                ); /* Ban đầu ẩn mặt sau bằng cách xoay 180 độ */
+            }
+
+            .card:hover .front {
+                transform: rotateY(180deg); /* Hiển thị mặt sau khi hover */
+            }
+
+            .card:hover .back {
+                transform: rotateY(0deg); /* Hiển thị mặt sau khi hover */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="front">Technician</div>
+                <div class="back">
+                    a person whose job is keeping a particular type of equipment
+                    or machinery in good condition.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Opening</div>
+                <div class="back">a job that is available.</div>
+            </div>
+            <div class="card">
+                <div class="front">To get together</div>
+                <div class="back">
+                    to meet with sb socially or in order to discuss sth.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Change</div>
+                <div class="back">
+                    the money that you get back when you have paid for sth
+                    giving more money than the amount it costs.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                    To fill sth out = To fill sth in / To fill up (with sth) |
+                    To fill sth up (with sth)
+                </div>
+                <div class="back">
+                    to become completely full; to make sth completely full.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Form</div>
+                <div class="back">
+                    an official document containing questions and spaces for
+                    answers.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Reply</div>
+                <div class="back">
+                    an act of replying to sth/sb in speech, writing or by some
+                    action.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">To fax sth (to sb) | To fax sb (sth)</div>
+                <div class="back">
+                    to send sb a document, message, etc… by fax.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Tax (on sth)</div>
+                <div class="back">
+                    money that you have to pay to the government so that it can
+                    pay for public services.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Moving (adj)</div>
+                <div class="back">
+                    causing you to have deep feelings of sadness or sympathy.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">The rest (of sth)</div>
+                <div class="back">The remaining part of something.</div>
+            </div>
+            <div class="card">
+                <div class="front">Seat (n)</div>
+                <div class="back">
+                    a place where you can sit, for example a chair.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Aisle (n)</div>
+                <div class="back">
+                    a passage between rows of seats in a church, theatre, train,
+                    etc…, or between rows of shelves in a supermarket.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Suit (n)</div>
+                <div class="back">
+                    a set of clothes made of the same cloth, including a jacket
+                    and trousers / pants or a skirt.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Professional (adj)</div>
+                <div class="back">
+                    suitable or appropriate for sb working in a particular
+                    profession.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">To cough</div>
+                <div class="back">
+                    to force out air suddenly and noisily through your throat,
+                    for example when you have a cold.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Without + Verb-ing</div>
+                <div class="back">not having, experiencing or showing sth.</div>
+            </div>
+            <div class="card">
+                <div class="front">To figure out (phrasal verb)</div>
+                <div class="back">
+                    finally find the solution to a problem after a lot of
+                    thought.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Track (n)</div>
+                <div class="back">
+                    a track with a number at a train station that a train
+                    arrives at or leaves from.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Fact (n)</div>
+                <div class="back">
+                    a thing that is known to be true, especially when it can be
+                    proved.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">To bother sb (about/with sth)</div>
+                <div class="back">
+                    to annoy, worry or upset sb; to cause sb trouble or pain.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">To hurry</div>
+                <div class="back">
+                    to do sth more quickly than usual because there is not much
+                    time.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Fun (n)</div>
+                <div class="back">
+                    enjoyment; pleasure; a thing that gives enjoyment or
+                    pleasure and makes you feel happy.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Package (n)</div>
+                <div class="back">
+                    a box, bag, etc. in which things are wrapped or packed; the
+                    contents of a box etc…
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Baggage = Luggage</div>
+                <div class="back">
+                    Bags, cases, etc... that contain sb’s clothes and things
+                    when they are travelling
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">To go down (To drop)</div>
+                <div class="back">to fall down in number.</div>
+            </div>
+            <div class="card">
+                <div class="front">Weight (n)</div>
+                <div class="back">
+                    how heavy sb/sth is, which can be measured in, for example,
+                    kilograms or pounds.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Cool (adj)</div>
+                <div class="back">fairly cold; not hot or warm.</div>
+            </div>
+            <div class="card">
+                <div class="front">Collar (n)</div>
+                <div class="back">
+                    the part around the neck of a shirt, jacket or coat that
+                    usually folds down.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                    To be/get tired of sb/sth | To be/get tired of doing sth
+                </div>
+                <div class="back">
+                    feeling that you have had enough of sb/sth because you no
+                    longer find them / it interesting or because they make you
+                    angry or unhappy.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Inner (adj)</div>
+                <div class="back">
+                    inside; towards or close to the centre of a place.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Budget (n)</div>
+                <div class="back">
+                    the money that is available to a person or an organization
+                    and a plan of how it will be spent over a period of time.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Appointment (with sb)</div>
+                <div class="back">
+                    a formal arrangement to meet or visit sb at a particular
+                    time, especially for a reason connected with their work.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Robbery (n)</div>
+                <div class="back">
+                    the crime of stealing money or goods from a bank,
+                    shop/store, person, etc…, especially using violence or
+                    threats.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Block (n)</div>
+                <div class="back">
+                    a tall building that contains flats or offices; buildings
+                    that form part of a school, hospital, etc... which are used
+                    for a particular purpose.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Excuse (for sth / for doing sth)</div>
+                <div class="back">
+                    a reason, either true or invented, that you give to explain
+                    or defend your behaviour.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Vacation = holiday (n)</div>
+                <div class="back">
+                    1. (in Britain) one of the periods of time when universities
+                    or courts of law are closed. 2. (in the US) one of the
+                    periods of time when schools, colleges, universities or
+                    courts of law are closed.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                    Drinking fountain (especially BrE) (NAmE usually “water
+                    fountain”)
+                </div>
+                <div class="back">
+                    device that supplies water for drinking in public places.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Fountain</div>
+                <div class="back">
+                    a structure from which water is sent up into the air by a
+                    pump, used to decorate parks and gardens / yards.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Fair (to/on sb)</div>
+                <div class="back">
+                    acceptable and appropriate in a particular situation.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Closet (n)</div>
+                <div class="back">
+                    a small room or a space in a wall with a door that reaches
+                    the floor, used for storing things.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Fantastic (informal)</div>
+                <div class="back">extremely good; excellent.</div>
+            </div>
+            <div class="card">
+                <div class="front">Tire = tyre (n)</div>
+                <div class="back">
+                    a thick rubber ring that fits around the edge of a wheel of
+                    a car, bicycle, etc…
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Applicant (for sth) (n)</div>
+                <div class="back">
+                    a person who makes a formal request for sth (= applies for
+                    it), especially for a job, a place at a college or
+                    university, etc…
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Appliance (n)</div>
+                <div class="back">
+                    a machine that is designed to do a particular thing in the
+                    home, such as preparing food, heating or cleaning.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Qualified (to do sth)</div>
+                <div class="back">
+                    having the practical knowledge or skills to do sth.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Registered mail</div>
+                <div class="back">
+                    a method of sending a letter or package in which the person
+                    sending it can claim money if it arrives late or is lost or
+                    damaged.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Break (n)</div>
+                <div class="back">
+                    a pause or period of time when sth stops before starting
+                    again.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Direct (adj)</div>
+                <div class="back">
+                    saying exactly what you mean in a way that nobody can
+                    pretend not to understand.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Supply (n)</div>
+                <div class="back">
+                    an amount of sth that is provided or available to be used.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">To be out of order (of a machine ...)</div>
+                <div class="back">not working correctly.</div>
+            </div>
+            <div class="card">
+                <div class="front">Assignment (n)</div>
+                <div class="back">
+                    a task or piece of work that sb is given to do, usually as
+                    part of their job or studies.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Signature (n)</div>
+                <div class="back">
+                    your name as you usually write it, for example at the end of
+                    a letter.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Pleasant (adj)</div>
+                <div class="back">enjoyable, pleasing or attractive.</div>
+            </div>
+            <div class="card">
+                <div class="front">Disappointment (n)</div>
+                <div class="back">
+                    sadness because sth has not happened or been as good,
+                    successful, … as you expected or hoped.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">
+                    To appoint sb (to sth) | To appoint sb (as) sth
+                </div>
+                <div class="back">
+                    to choose sb for a job or position of responsibility.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">File (n)</div>
+                <div class="back">
+                    a set of pages, records, ect, … that contain information
+                    about a particular person or subject.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">To file (v)</div>
+                <div class="back">
+                    to keep papers, documents, ect,… in a particular place so
+                    that you can find them easily.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Dozen</div>
+                <div class="back">1. Twelve 2. A lot of</div>
+            </div>
+            <div class="card">
+                <div class="front">In touch (with sb)</div>
+                <div class="back">talking or writing to someone.</div>
+            </div>
+            <div class="card">
+                <div class="front">Tab (n)</div>
+                <div class="back">a taxi</div>
+            </div>
+            <div class="card">
+                <div class="front">
+                    Costume (n) = swimsuit = bathing costume
+                </div>
+                <div class="back">a piece of clothing worn of swimming.</div>
+            </div>
+            <div class="card">
+                <div class="front">Costume</div>
+                <div class="back">
+                    a set of clothes worn in order to look like someone or
+                    something else.
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">To contact</div>
+                <div class="back">to write to or telephone someone.</div>
+            </div>
+        </div>
+    </body>
+</html>
